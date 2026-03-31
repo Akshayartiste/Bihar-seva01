@@ -21,7 +21,9 @@ const PORT = process.env.PORT || 5000
 app.use(express.json())
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin:[ "http://localhost:5173",
+    "https://your-site-name.netlify.app",
+    "https://your-frontend-url.onrender.com"] ,
   credentials: true
 }))
 
@@ -42,7 +44,9 @@ app.use(passport.session())
 app.get("/ping", (req, res) => {
   res.send("hii")
 })
-
+app.get("/hoo", (req, res) => {
+  res.send("API Running 🚀")
+})
 // 🔥 auth routes
 app.use("/auth", authRoutes)
 app.use("/api", userRoutes)

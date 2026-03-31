@@ -9,10 +9,11 @@ export default function GoogleSuccess() {
       localStorage.setItem("token", token)
 
       // 🔥 USER DATA FETCH KARO
-      fetch("http://localhost:5000/api/me", {
+      fetch("https://bihar-seva01.onrender.com/api/me", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
+        
       })
         .then((res) => res.json())
         .then((data) => {

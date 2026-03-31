@@ -72,7 +72,9 @@ export default function LoginPage() {
 
   try {
     console.log("CALLING API...")
-    const res = await fetch("http://localhost:5000/auth/login", {
+
+    // yaha change hua hai 
+   const res = await fetch("https://bihar-seva01.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
