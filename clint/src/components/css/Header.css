@@ -1,0 +1,259 @@
+/* HEADER CONTAINER */
+.header {
+  width: 100%;
+  background: linear-gradient(135deg, #1e3a8a, #7c3aed);
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* FLEX STRUCTURE */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main-logo {
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.location-tag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  color: #ffd166;
+}
+
+
+/* profile dropdown  */
+/* Profile Section */
+.profile-section {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile-name {
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+
+/* Dropdown */
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 120%;
+  width: 140px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease-out;
+}
+
+/* Show dropdown on hover for desktop */
+@media (hover: hover) and (pointer: fine) {
+  .profile-section:hover .profile-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* Also show dropdown if state is open (mobile click) */
+.profile-section .profile-dropdown {
+  display: block;
+}
+
+.profile-section .profile-dropdown[data-open="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown items */
+.dropdown-item {
+  display: block;
+  padding: 10px 14px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+  border: none;
+  width: 100%;
+  text-align: left;
+  background: none;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f7f7f7;
+}
+
+.logout-btn {
+  color: #e53935;
+  font-weight: 500;
+}
+
+/* NAVIGATION LINKS */
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #c7d2fe;
+  transform: translateY(-2px);
+}
+
+/* BUTTON STYLES */
+.menu-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btnn-primary {
+  margin-bottom: 10px;
+  background: white;
+  color: #1e40af;
+}
+
+.btnn-primary:hover {
+  background: #f1f5f9;
+  color: #1e40af;
+  transform: scale(1.05);
+}
+
+/* LOGIN BUTTON ON DESKTOP/TAB */
+.login-btn {
+  font-size: 1rem;
+  
+}
+
+/* HAMBURGER ICON */
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: transform 0.2s ease;
+}
+
+.mobile-menu-btn:hover {
+  transform: scale(1.15);
+}
+
+/* ============ MOBILE RESPONSIVE ============ */
+
+
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #312e81;
+    flex-direction: column;
+    padding: 1rem;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    border-top: 1px solid #4f46e5;
+    transition: all 0.35s ease-in-out;
+    gap: 0.5rem;
+    pointer-events: none;
+  }
+
+  .nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    padding: 0.4rem 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.95rem;
+  }
+
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .location-tag {
+    display: none;
+  }
+
+  .login-btn {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .menu-actions {
+    gap: 0.4rem;
+  }
+}
+
+

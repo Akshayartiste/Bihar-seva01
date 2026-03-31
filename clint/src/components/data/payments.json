@@ -1,0 +1,52 @@
+{
+  "payments": [
+    {
+      "id": "pay_001",
+      "requestId": "req_002",
+      "userId": "user_001",
+      "agentId": "agent_002",
+      "amount": 200,
+      "service": "Document Work",
+      "status": "completed",
+      "method": "cash",
+      "transactionId": "TXN2001234",
+      "createdAt": "2024-01-10T16:30:00Z",
+      "completedAt": "2024-01-10T16:30:00Z",
+      "receipt": {
+        "number": "RCP001",
+        "downloadUrl": "/receipts/RCP001.pdf"
+      }
+    },
+    {
+      "id": "pay_002",
+      "requestId": "req_003",
+      "userId": "user_002",
+      "agentId": "agent_001",
+      "amount": 100,
+      "service": "Shopping",
+      "status": "completed",
+      "method": "cash",
+      "transactionId": "TXN3001235",
+      "createdAt": "2024-01-12T18:45:00Z",
+      "completedAt": "2024-01-12T18:45:00Z",
+      "receipt": {
+        "number": "RCP002",
+        "downloadUrl": "/receipts/RCP002.pdf"
+      }
+    },
+    {
+      "id": "pay_003",
+      "requestId": "req_001",
+      "userId": "user_001",
+      "agentId": "agent_001",
+      "amount": 150,
+      "service": "Medicine Delivery",
+      "status": "pending",
+      "method": null,
+      "transactionId": null,
+      "createdAt": "2024-01-15T09:30:00Z",
+      "completedAt": null,
+      "receipt": null
+    }
+  ]
+}

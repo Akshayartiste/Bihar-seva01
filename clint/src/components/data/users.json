@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "name": "राजेश कुमार",
+      "phone": "+91 98765 43210",
+      "email": "rajesh@example.com",
+      "village": "darbhanga-city",
+      "address": "Village Rampur, Post Rampur, Tehsil Rampur",
+      "state": "Bihar",
+      "pincode": "846004",
+      "memberSince": "2024-01-15",
+      "isVerified": true,
+      "stats": {
+        "totalRequests": 12,
+        "completedRequests": 10,
+        "cancelledRequests": 1,
+        "totalSpent": 2450,
+        "averageRating": 4.8
+      }
+    },
+    {
+      "id": "user_002",
+      "name": "सुनीता देवी",
+      "phone": "+91 87654 32109",
+      "email": "sunita@example.com",
+      "village": "madhubani-city",
+      "address": "Ward No. 5, Madhubani City",
+      "state": "Bihar",
+      "pincode": "847211",
+      "memberSince": "2024-02-01",
+      "isVerified": true,
+      "stats": {
+        "totalRequests": 8,
+        "completedRequests": 7,
+        "cancelledRequests": 0,
+        "totalSpent": 1200,
+        "averageRating": 4.9
+      }
+    }
+  ]
+}

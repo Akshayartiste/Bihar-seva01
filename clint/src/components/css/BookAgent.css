@@ -1,0 +1,373 @@
+.book-agent-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  padding: 2rem 1rem;
+}
+
+.page-headers {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.page-titles {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.page-subtitles {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.page-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* DESKTOP FILTER CONTAINER - visible only on desktop */
+.desktop-filter-container {
+  display: block;
+  width: 280px;
+}
+
+/* MOBILE FILTER CONTAINER - hidden on desktop */
+.mobile-filter-container {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.filters-sidebar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+/* Filter toggle button */
+.filter-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  color: #1e40af;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.filter-toggle-btn:hover {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.filter-icon-btn {
+  width: 20px;
+  height: 20px;
+}
+
+/* Dropdown filters - hidden by default */
+.filters-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+  animation: slideDown 0.3s ease-out;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.filter-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  transition: color 0.2s;
+}
+
+.filter-close-btn:hover {
+  color: #111;
+}
+
+.filter-close-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.clear-filters-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.6rem;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clear-filters-btn:hover {
+  background: #b91c1c;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-section:last-child {
+  margin-bottom: 0;
+}
+
+.filter-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.service-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  font-size: 0.8rem;
+}
+
+.service-checkbox:hover {
+  background-color: rgba(30, 58, 138, 0.05);
+}
+
+.service-checkbox input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #7c3aed;
+}
+
+.checkbox-label {
+  font-size: 0.8rem;
+  color: #374151;
+  cursor: pointer;
+}
+
+.sort-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sort-radio {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  font-size: 0.8rem;
+}
+
+.sort-radio:hover {
+  background-color: rgba(30, 58, 138, 0.05);
+}
+
+.sort-radio input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #1e40af;
+}
+
+.radio-label {
+  font-size: 0.8rem;
+  color: #374151;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.search-container {
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  color: #9ca3af;
+  width: 20px;
+  height: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 1rem;
+  color: #111;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+  background: #fff;
+}
+
+.results-info {
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+}
+
+/* Grid - 3 columns on desktop */
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  animation: fadeIn 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.125rem;
+}
+
+/* TABLET: Hide desktop filter, show mobile filter */
+@media (max-width: 1024px) {
+  .desktop-filter-container {
+    display: none;
+  }
+
+  .mobile-filter-container {
+    display: block;
+  }
+
+  .page-container {
+    flex-direction: column;
+  }
+
+  .agents-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* MOBILE: 1 card per row */
+@media (max-width: 768px) {
+  .agents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: 1.875rem;
+  }
+}
+
+/* 460-768px: Show 2 agents per row */
+@media (max-width: 768px) and (min-width: 460px) {
+  .agents-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

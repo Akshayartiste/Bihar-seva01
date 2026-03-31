@@ -1,0 +1,168 @@
+{
+  "districts": [
+    {
+      "id": "darbhanga",
+      "name": "Darbhanga",
+      "villages": [
+        {
+          "id": "darbhanga-city",
+          "name": "Darbhanga City",
+          "type": "city",
+          "pincode": "846004",
+          "coordinates": {
+            "lat": 26.1542,
+            "lng": 85.8918
+          }
+        },
+        {
+          "id": "laheriasarai",
+          "name": "Laheriasarai",
+          "type": "town",
+          "pincode": "846001",
+          "coordinates": {
+            "lat": 26.1234,
+            "lng": 85.8567
+          }
+        },
+        {
+          "id": "keoti",
+          "name": "Keoti",
+          "type": "village",
+          "pincode": "846005",
+          "coordinates": {
+            "lat": 26.1789,
+            "lng": 85.9123
+          }
+        },
+        {
+          "id": "manigachi",
+          "name": "Manigachi",
+          "type": "village",
+          "pincode": "846006",
+          "coordinates": {
+            "lat": 26.1456,
+            "lng": 85.8789
+          }
+        },
+        {
+          "id": "singhwara",
+          "name": "Singhwara",
+          "type": "village",
+          "pincode": "846007",
+          "coordinates": {
+            "lat": 26.1678,
+            "lng": 85.8456
+          }
+        }
+      ]
+    },
+    {
+      "id": "madhubani",
+      "name": "Madhubani",
+      "villages": [
+        {
+          "id": "madhubani-city",
+          "name": "Madhubani City",
+          "type": "city",
+          "pincode": "847211",
+          "coordinates": {
+            "lat": 26.3648,
+            "lng": 86.0636
+          }
+        },
+        {
+          "id": "jhanjharpur",
+          "name": "Jhanjharpur",
+          "type": "town",
+          "pincode": "847404",
+          "coordinates": {
+            "lat": 26.2645,
+            "lng": 86.2789
+          }
+        },
+        {
+          "id": "phulparas",
+          "name": "Phulparas",
+          "type": "village",
+          "pincode": "847235",
+          "coordinates": {
+            "lat": 26.3456,
+            "lng": 86.0123
+          }
+        },
+        {
+          "id": "benipatti",
+          "name": "Benipatti",
+          "type": "village",
+          "pincode": "847223",
+          "coordinates": {
+            "lat": 26.3789,
+            "lng": 86.0789
+          }
+        },
+        {
+          "id": "khajauli",
+          "name": "Khajauli",
+          "type": "village",
+          "pincode": "847228",
+          "coordinates": {
+            "lat": 26.3234,
+            "lng": 86.0456
+          }
+        }
+      ]
+    }
+  ],
+  "timeSlots": [
+    {
+      "id": "morning",
+      "label": "Morning (9 AM - 12 PM)",
+      "startTime": "09:00",
+      "endTime": "12:00"
+    },
+    {
+      "id": "afternoon",
+      "label": "Afternoon (12 PM - 4 PM)",
+      "startTime": "12:00",
+      "endTime": "16:00"
+    },
+    {
+      "id": "evening",
+      "label": "Evening (4 PM - 7 PM)",
+      "startTime": "16:00",
+      "endTime": "19:00"
+    },
+    {
+      "id": "anytime",
+      "label": "Anytime",
+      "startTime": "09:00",
+      "endTime": "19:00"
+    }
+  ],
+  "budgetRanges": [
+    {
+      "id": "50-100",
+      "label": "₹50 - ₹100",
+      "min": 50,
+      "max": 100
+    },
+    {
+      "id": "100-200",
+      "label": "₹100 - ₹200",
+      "min": 100,
+      "max": 200
+    },
+    {
+      "id": "200-500",
+      "label": "₹200 - ₹500",
+      "min": 200,
+      "max": 500
+    },
+    {
+      "id": "500+",
+      "label": "₹500+",
+      "min": 500,
+      "max": null
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "platform": {
+    "totalUsers": 800,
+    "totalAgents": 150,
+    "totalRequests": 2450,
+    "completedRequests": 2380,
+    "villagesConnected": 25,
+    "successRate": 96,
+    "totalRevenue": 245000,
+    "monthlyGrowth": 15
+  },
+  "districts": {
+    "darbhanga": {
+      "users": 450,
+      "agents": 85,
+      "requests": 1400,
+      "villages": 15
+    },
+    "madhubani": {
+      "users": 350,
+      "agents": 65,
+      "requests": 1050,
+      "villages": 10
+    }
+  },
+  "services": {
+    "medicine": {
+      "requests": 650,
+      "avgRating": 4.8,
+      "avgPrice": 120
+    },
+    "documents": {
+      "requests": 480,
+      "avgRating": 4.7,
+      "avgPrice": 180
+    },
+    "shopping": {
+      "requests": 720,
+      "avgRating": 4.9,
+      "avgPrice": 85
+    },
+    "banking": {
+      "requests": 320,
+      "avgRating": 4.6,
+      "avgPrice": 80
+    },
+    "recharge": {
+      "requests": 180,
+      "avgRating": 4.9,
+      "avgPrice": 20
+    },
+    "tickets": {
+      "requests": 100,
+      "avgRating": 4.5,
+      "avgPrice": 95
+    }
+  }
+}

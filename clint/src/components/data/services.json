@@ -1,0 +1,164 @@
+{
+  "services": [
+    {
+      "id": "medicine",
+      "title": "Medicine Delivery",
+      "description": "डॉक्टर की पर्ची के अनुसार दवाई मंगवाएं",
+      "icon": "💊",
+      "price": "₹50 + दवाई का दाम",
+      "basePrice": 50,
+      "time": "2-4 hours",
+      "timeInMinutes": 180,
+      "rating": 4.8,
+      "agents": 25,
+      "category": "medical",
+      "popular": true,
+      "features": ["Prescription verification", "Same day delivery", "Emergency service available"],
+      "urgencyCharges": {
+        "normal": 0,
+        "urgent": 50,
+        "emergency": 100
+      }
+    },
+    {
+      "id": "documents",
+      "title": "Document Work",
+      "description": "College, Office में कागजी कार्रवाई",
+      "icon": "📄",
+      "price": "₹100-300",
+      "basePrice": 100,
+      "maxPrice": 300,
+      "time": "4-8 hours",
+      "timeInMinutes": 360,
+      "rating": 4.7,
+      "agents": 18,
+      "category": "documents",
+      "popular": false,
+      "features": ["Form submission", "Document collection", "Photocopying service"],
+      "urgencyCharges": {
+        "normal": 0,
+        "urgent": 75,
+        "emergency": 150
+      }
+    },
+    {
+      "id": "shopping",
+      "title": "Shopping Service",
+      "description": "किसी भी shop से सामान मंगवाएं",
+      "icon": "🛒",
+      "price": "₹30-100",
+      "basePrice": 30,
+      "maxPrice": 100,
+      "time": "1-3 hours",
+      "timeInMinutes": 120,
+      "rating": 4.9,
+      "agents": 32,
+      "category": "shopping",
+      "popular": false,
+      "features": ["Quality check", "Bill verification", "Multiple shops"],
+      "urgencyCharges": {
+        "normal": 0,
+        "urgent": 30,
+        "emergency": 60
+      }
+    },
+    {
+      "id": "banking",
+      "title": "Bank Work",
+      "description": "Bank में पैसे जमा/निकालना",
+      "icon": "🏦",
+      "price": "₹80",
+      "basePrice": 80,
+      "time": "2-4 hours",
+      "timeInMinutes": 180,
+      "rating": 4.6,
+      "agents": 15,
+      "category": "banking",
+      "popular": false,
+      "features": ["Cash deposit/withdrawal", "Form filling", "Account services"],
+      "urgencyCharges": {
+        "normal": 0,
+        "urgent": 40,
+        "emergency": 80
+      }
+    },
+    {
+      "id": "recharge",
+      "title": "Mobile Recharge",
+      "description": "Mobile, DTH recharge",
+      "icon": "📱",
+      "price": "₹20",
+      "basePrice": 20,
+      "time": "30 minutes",
+      "timeInMinutes": 30,
+      "rating": 4.9,
+      "agents": 40,
+      "category": "recharge",
+      "popular": false,
+      "features": ["Instant recharge", "All operators", "Bill payment"],
+      "urgencyCharges": {
+        "normal": 0,
+        "urgent": 10,
+        "emergency": 20
+      }
+    },
+    {
+      "id": "tickets",
+      "title": "Ticket Booking",
+      "description": "Bus, Train ticket booking",
+      "icon": "🎫",
+      "price": "₹50-150",
+      "basePrice": 50,
+      "maxPrice": 150,
+      "time": "1-2 hours",
+      "timeInMinutes": 90,
+      "rating": 4.5,
+      "agents": 12,
+      "category": "travel",
+      "popular": false,
+      "features": ["Online booking", "Seat selection", "Cancellation support"],
+      "urgencyCharges": {
+        "normal": 0,
+        "urgent": 25,
+        "emergency": 50
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Services",
+      "icon": "🏠"
+    },
+    {
+      "id": "medical",
+      "name": "Medical",
+      "icon": "💊"
+    },
+    {
+      "id": "documents",
+      "name": "Documents",
+      "icon": "📄"
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping",
+      "icon": "🛒"
+    },
+    {
+      "id": "banking",
+      "name": "Banking",
+      "icon": "🏦"
+    },
+    {
+      "id": "recharge",
+      "name": "Recharge",
+      "icon": "📱"
+    },
+    {
+      "id": "travel",
+      "name": "Travel",
+      "icon": "🎫"
+    }
+  ]
+}

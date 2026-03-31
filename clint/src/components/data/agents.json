@@ -1,0 +1,76 @@
+{
+  "agents": [
+    {
+      "id": "agent_001",
+      "name": "राम कुमार शर्मा",
+      "phone": "+91 87654 32109",
+      "email": "ram.kumar@example.com",
+      "location": "darbhanga-city",
+      "vehicleType": "Motorcycle",
+      "services": ["medicine", "shopping", "banking", "recharge"],
+      "rating": 4.8,
+      "totalJobs": 156,
+      "completedJobs": 153,
+      "successRate": 98,
+      "isVerified": true,
+      "isActive": true,
+      "joinedDate": "2024-01-01",
+      "documents": {
+        "aadhar": "verified",
+        "pan": "verified",
+        "driving_license": "verified",
+        "police_verification": "verified"
+      },
+      "earnings": {
+        "today": 450,
+        "thisMonth": 12450,
+        "total": 45230
+      },
+      "availability": {
+        "monday": { "start": "09:00", "end": "19:00" },
+        "tuesday": { "start": "09:00", "end": "19:00" },
+        "wednesday": { "start": "09:00", "end": "19:00" },
+        "thursday": { "start": "09:00", "end": "19:00" },
+        "friday": { "start": "09:00", "end": "19:00" },
+        "saturday": { "start": "09:00", "end": "17:00" },
+        "sunday": { "start": "10:00", "end": "16:00" }
+      }
+    },
+    {
+      "id": "agent_002",
+      "name": "श्याम सिंह",
+      "phone": "+91 76543 21098",
+      "email": "shyam.singh@example.com",
+      "location": "madhubani-city",
+      "vehicleType": "Bicycle",
+      "services": ["documents", "banking", "tickets"],
+      "rating": 4.7,
+      "totalJobs": 89,
+      "completedJobs": 87,
+      "successRate": 97,
+      "isVerified": true,
+      "isActive": true,
+      "joinedDate": "2024-01-15",
+      "documents": {
+        "aadhar": "verified",
+        "pan": "verified",
+        "driving_license": "not_required",
+        "police_verification": "verified"
+      },
+      "earnings": {
+        "today": 200,
+        "thisMonth": 8900,
+        "total": 23400
+      },
+      "availability": {
+        "monday": { "start": "08:00", "end": "18:00" },
+        "tuesday": { "start": "08:00", "end": "18:00" },
+        "wednesday": { "start": "08:00", "end": "18:00" },
+        "thursday": { "start": "08:00", "end": "18:00" },
+        "friday": { "start": "08:00", "end": "18:00" },
+        "saturday": { "start": "09:00", "end": "16:00" },
+        "sunday": "off"
+      }
+    }
+  ]
+}

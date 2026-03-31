@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "BiharSeva",
+    "tagline": "गांव से शहर तक - आपकी हर जरूरत",
+    "version": "1.0.0",
+    "supportPhone": "+91 98765 43210",
+    "supportEmail": "help@biharseva.com",
+    "whatsappNumber": "+91 98765 43210"
+  },
+  "features": {
+    "realTimeTracking": false,
+    "onlinePayments": false,
+    "chatSupport": false,
+    "pushNotifications": false,
+    "agentRatings": true,
+    "multiLanguage": false
+  },
+  "pricing": {
+    "platformFee": 5,
+    "urgentChargeMultiplier": 1.5,
+    "emergencyChargeMultiplier": 2.0,
+    "cancellationFee": 20
+  },
+  "limits": {
+    "maxRequestsPerDay": 5,
+    "maxRequestsPerMonth": 50,
+    "minRatingForAgent": 4.0,
+    "maxDistanceKm": 50
+  },
+  "notifications": {
+    "requestCreated": true,
+    "agentAssigned": true,
+    "serviceStarted": true,
+    "serviceCompleted": true,
+    "paymentReminder": true
+  },
+  "social": {
+    "facebook": "https://facebook.com/biharseva",
+    "instagram": "https://instagram.com/biharseva",
+    "twitter": "https://twitter.com/biharseva"
+  }
+}
