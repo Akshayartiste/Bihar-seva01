@@ -51,7 +51,7 @@ export default function ContactPage() {
     {
       icon: <Phone className="contact-info-icon" />,
       title: "Phone Support",
-      details: ["+91 98765 43210", "+91 87654 32109"],
+      details: ["+91 11111 11110", "+91 11111 11119"],
       description: "24/7 customer support available",
     },
     {

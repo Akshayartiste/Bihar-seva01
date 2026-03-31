@@ -13,7 +13,7 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "राजेश कुमार सिंह",
+      name: "Aksahy kumar",
       role: "Founder & CEO",
       image: "👨‍💼",
       description: "10+ years experience in rural development और technology innovation में expertise",
@@ -21,7 +21,7 @@ export default function AboutPage() {
       twitter: "#",
     },
     {
-      name: "प्रिया शर्मा",
+      name: "JK coder",
       role: "Co-Founder & COO",
       image: "👩‍💼", 
       description: "Operations और service management में expert, rural Bihar की deep understanding",
@@ -29,7 +29,7 @@ export default function AboutPage() {
       twitter: "#",
     },
     {
-      name: "अमित कुमार यादव",
+      name: "Gautam",
       role: "Co-Founder & CTO",
       image: "👨‍💻",
       description: "Technology solutions और mobile app development में 8+ years का experience",
@@ -37,7 +37,7 @@ export default function AboutPage() {
       twitter: "#",
     },
     {
-      name: "सुनीता देवी",
+      name: "Ajay",
       role: "Co-Founder & Head of Community",
       image: "👩‍🎓",
       description: "Community engagement और local partnerships में specialist, social work background",
