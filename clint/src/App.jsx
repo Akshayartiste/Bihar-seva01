@@ -38,6 +38,8 @@ const App = () => {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
+        // Example React Router
+         <Route path="/google-success" element={<GoogleSuccess />} />
         {/* <Route path="/agent" element={<AgentTravel />} /> */}
         <Route path="/services" element={<Services />} />
         <Route path="/google-success" element={<GoogleSuccess />} />

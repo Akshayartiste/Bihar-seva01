@@ -6,25 +6,22 @@ import "../css/Header.css"
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isProfileOpen, setIsProfileOpen] = useState(false)
-  const [user, setUser] = useState(null)
+  // const [user, setUser] = useState(null)
 
   const navRef = useRef(null)
   const profileRef = useRef(null)
 
   // GET USER FROM LOCALSTORAGE
-  useEffect(() => {
-    try {
-      const storedUser = localStorage.getItem("user")
-      if (storedUser && storedUser !== "undefined") {
-        setUser(JSON.parse(storedUser))
-      } else {
-        setUser(null)
-      }
-    } catch (error) {
-      console.error("User parse error:", error)
-      setUser(null)
-    }
-  }, [])
+  // ✅ User state initialization directly from localStorage
+const [user, setUser] = useState(() => {
+  try {
+    const storedUser = localStorage.getItem("user")
+    return storedUser && storedUser !== "undefined" ? JSON.parse(storedUser) : null
+  } catch (error) {
+    console.error("User parse error:", error)
+    return null
+  }
+})
 
   // Close menu + profile on outside click
   useEffect(() => {
@@ -45,9 +42,10 @@ export default function Header() {
 
   // Logout function
   const handleLogout = () => {
-    localStorage.clear()
-    window.location.href = "/login"
-  }
+  localStorage.clear(); // clear token + user
+  setUser(null); // state update for Header
+  window.location.href = "/login"; // SPA redirect
+};
 
   return (
     <header className="header">
@@ -82,16 +80,19 @@ export default function Header() {
               About
             </Link>
           </nav>
+          <button className="dropdown-item logout-btn" onClick={handleLogout}>
+                      Logout
+                    </button>
 
           <div className="menu-actions">
             {user ? (
               <div className="profile-section" ref={profileRef}>
-                <div
-                  className="profile-name"
-                  onClick={() => setIsProfileOpen(!isProfileOpen)}
-                >
-                  👤 {user.name}
-                </div>
+               <div
+                   className="profile-name"
+                   onClick={() => setIsProfileOpen(!isProfileOpen)}
+                 >
+                   👤 {user.name}
+                 </div>
 
                 {isProfileOpen && (
                   <div className="profile-dropdown" data-open={isProfileOpen}>
@@ -111,6 +112,7 @@ export default function Header() {
               <Link to="/login" className="btn btnn-primary login-btn">
                 Login करें
               </Link>
+              
             )}
 
             <button

@@ -22,8 +22,8 @@ app.use(express.json())
 
 app.use(cors({
   origin:[ "http://localhost:5173",
-    "https://your-site-name.netlify.app",
-    "https://your-frontend-url.onrender.com"] ,
+    "https://bihar-seva001.netlify.app",
+    ] ,
   credentials: true
 }))
 
