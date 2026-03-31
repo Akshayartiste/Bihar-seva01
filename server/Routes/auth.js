@@ -21,7 +21,7 @@ router.get(
       { expiresIn: "7d" }
     )
 
-    res.redirect(`http://localhost:5173/google-success?token=${token}`)
+    res.redirect(`https://bihar-seva001.netlify.app/google-success?token=${token}`)
   }
 )
 

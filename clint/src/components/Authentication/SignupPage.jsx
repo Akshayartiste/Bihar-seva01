@@ -166,7 +166,7 @@ export default function SignupPage() {
 
            {/* 🔥 GOOGLE LOGIN BUTTON */}
           <div className="google-login">
-            <a href="http://localhost:5000/auth/google">
+            <a href="https://bihar-seva01.onrender.com/auth/google">
               <button type="button" className="google-btn">
                 <img
                   src="https://developers.google.com/identity/images/g-logo.png"
